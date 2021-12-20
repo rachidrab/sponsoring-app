@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Picture",
+        "createOrEditLabel": "Створити чи редагувати Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "Новий Picture створений з ідентифікатором {{ param }}",
+      "updated": "Picture оновлений з ідентифікатором {{ param }}",
+      "deleted": "Picture видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

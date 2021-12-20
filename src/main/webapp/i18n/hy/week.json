@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ստեղծել նոր Week",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Week",
+        "notFound": "No Weeks found"
+      },
+      "created": "Նոր Week ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Week թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Week հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Week {{ id }}?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Picture",
+        "createOrEditLabel": "Creeare sau editare Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "A fost creată o nouă entitate Picture cu identificatorul {{ param }}",
+      "updated": "Picture cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Picture cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

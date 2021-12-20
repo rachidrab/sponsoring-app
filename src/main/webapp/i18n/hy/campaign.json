@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ստեղծել նոր Campaign",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "Նոր Campaign ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Campaign թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Campaign հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Campaign",
+        "createOrEditLabel": "Створити чи редагувати Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "Новий Campaign створений з ідентифікатором {{ param }}",
+      "updated": "Campaign оновлений з ідентифікатором {{ param }}",
+      "deleted": "Campaign видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

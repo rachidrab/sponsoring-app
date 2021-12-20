@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Week",
+        "createOrEditLabel": "Kreirajte ili izmenite Week",
+        "notFound": "No Weeks found"
+      },
+      "created": "Kreiran je novi Week pod nazivom {{ param }}",
+      "updated": "Week pod nazivom {{ param }} je ažuriran",
+      "deleted": "Week pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Week pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

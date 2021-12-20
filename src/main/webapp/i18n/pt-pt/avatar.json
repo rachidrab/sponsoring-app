@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Avatar",
+        "createOrEditLabel": "Criar ou editar Avatar",
+        "notFound": "Nenhum Avatars encontrado"
+      },
+      "created": "Um novo Avatar foi criado com o identificador {{ param }}",
+      "updated": "Avatar com identificador {{ param }} foi actualizado",
+      "deleted": "Avatar com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

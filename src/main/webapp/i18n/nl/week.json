@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Week",
+        "createOrEditLabel": "Maak of wijzig een Week",
+        "notFound": "No Weeks found"
+      },
+      "created": "A new Week is created with identifier {{ param }}",
+      "updated": "A Week is updated with identifier {{ param }}",
+      "deleted": "A Week is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Week {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

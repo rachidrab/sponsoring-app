@@ -1,0 +1,61 @@
+{
+  "parrainageApp": {
+    "gift": {
+      "home": {
+        "title": "Gifts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Gift",
+        "createOrEditLabel": "Maak of wijzig een Gift",
+        "notFound": "No Gifts found"
+      },
+      "created": "A new Gift is created with identifier {{ param }}",
+      "updated": "A Gift is updated with identifier {{ param }}",
+      "deleted": "A Gift is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Gift {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Gift"
+      },
+      "id": "ID",
+      "brandName": "Brand Name",
+      "material": "Material",
+      "style": "Style",
+      "season": "Season",
+      "type": "Type",
+      "clothingLength": "Clothing Length",
+      "collar": "Collar",
+      "sleeveLength": "Sleeve Length",
+      "design": "Design",
+      "gender": "Gender",
+      "occasion": "Occasion",
+      "decoration": "Decoration",
+      "closureType": "Closure Type",
+      "sleeveType": "Sleeve Type",
+      "color": "Color",
+      "quality": "Quality",
+      "features": "Features",
+      "activeNoiseCancellation": "Active Noise Cancellation",
+      "volumeControl": "Volume Control",
+      "wirelessType": "Wireless Type",
+      "functions": "Functions",
+      "packageList": "Package List",
+      "bluetoothVersion": "Bluetooth Version",
+      "frequency": "Frequency",
+      "modelNumber": "Model Number",
+      "description": "Description",
+      "ram": "Ram",
+      "suitableFor": "Suitable For",
+      "screenStyle": "Screen Style",
+      "weight": "Weight",
+      "rom": "Rom",
+      "battery": "Battery",
+      "touchScreen": "Touch Screen",
+      "hooded": "Hooded",
+      "madeIn": "Made In",
+      "shippingFrom": "Shipping From",
+      "sizee": "Sizee",
+      "picture": "Picture"
+    }
+  }
+}

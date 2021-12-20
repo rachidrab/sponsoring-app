@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Campaign",
+        "createOrEditLabel": "Kreirajte ili izmenite Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "Kreiran je novi Campaign pod nazivom {{ param }}",
+      "updated": "Campaign pod nazivom {{ param }} je ažuriran",
+      "deleted": "Campaign pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Campaign pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Week erstellen",
+        "createOrEditLabel": "Week erstellen oder bearbeiten",
+        "notFound": "Keine Weeks gefunden"
+      },
+      "created": "Week erstellt mit ID {{ param }}",
+      "updated": "Week aktualisiert mit ID {{ param }}",
+      "deleted": "Week gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Week {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

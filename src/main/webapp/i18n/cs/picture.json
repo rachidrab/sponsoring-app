@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Picture",
+        "createOrEditLabel": "Vytvořit nebo upravit Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "Byl vytvořen potomek entity Picture s identifikátorem {{ param }}",
+      "updated": "Potomek entity Picture s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Picture s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Avatar",
+        "createOrEditLabel": "Krijo ose përpuno një Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Një Avatar i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Avatar u përpunua me identifikues {{ param }}",
+      "deleted": "Një Avatar u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

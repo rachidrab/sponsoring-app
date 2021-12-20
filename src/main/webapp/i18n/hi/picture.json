@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Picture बनाएँ",
+        "createOrEditLabel": "Picture बनाएँ या संपादित करें",
+        "notFound": "No Pictures found"
+      },
+      "created": "एक नया Picture [identifier: {{ param }}] तैयार है",
+      "updated": "एक Picture [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Picture [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Picture [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

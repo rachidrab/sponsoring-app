@@ -1,0 +1,9 @@
+{
+  "parrainageApp": {
+    "ActiveNoiseCancellation": {
+      "null": "",
+      "YES": "YES",
+      "NO": "NO"
+    }
+  }
+}

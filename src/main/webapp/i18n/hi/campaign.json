@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Campaign बनाएँ",
+        "createOrEditLabel": "Campaign बनाएँ या संपादित करें",
+        "notFound": "No Campaigns found"
+      },
+      "created": "एक नया Campaign [identifier: {{ param }}] तैयार है",
+      "updated": "एक Campaign [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Campaign [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Campaign [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

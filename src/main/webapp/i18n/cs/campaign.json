@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Vytvořit Campaign",
+        "createOrEditLabel": "Vytvořit nebo upravit Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "Byl vytvořen potomek entity Campaign s identifikátorem {{ param }}",
+      "updated": "Potomek entity Campaign s identifikátorem {{ param }} byl upravený.",
+      "deleted": "Potomek entity Campaign s identifikátorem {{ param }} bol smazaný.",
+      "delete": {
+        "question": "Jste si jisti, že chcete smazat Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

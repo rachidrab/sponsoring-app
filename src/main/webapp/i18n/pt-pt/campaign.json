@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Campaign",
+        "createOrEditLabel": "Criar ou editar Campaign",
+        "notFound": "Nenhum Campaigns encontrado"
+      },
+      "created": "Um novo Campaign foi criado com o identificador {{ param }}",
+      "updated": "Campaign com identificador {{ param }} foi actualizado",
+      "deleted": "Campaign com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

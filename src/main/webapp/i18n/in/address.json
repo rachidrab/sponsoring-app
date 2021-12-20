@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Address baru",
+        "createOrEditLabel": "Buat atau edit Address",
+        "notFound": "No Addresses found"
+      },
+      "created": "Address dengan id {{ param }} telah dibuat",
+      "updated": "Address dengan id {{ param }} telah diperbaharui",
+      "deleted": "Address dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Address {{ id }}?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

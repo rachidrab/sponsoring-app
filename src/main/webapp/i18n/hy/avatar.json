@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ստեղծել նոր Avatar",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Նոր Avatar ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Avatar թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Avatar հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

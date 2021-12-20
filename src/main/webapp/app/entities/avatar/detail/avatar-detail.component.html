@@ -1,0 +1,45 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="avatar">
+      <h2 data-cy="avatarDetailsHeading"><span jhiTranslate="parrainageApp.avatar.detail.title">Avatar</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ avatar.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.avatar.avatar">Avatar</span></dt>
+        <dd>
+          <div *ngIf="avatar.avatar">
+            <a (click)="openFile(avatar.avatar, avatar.avatarContentType)">
+              <img [src]="'data:' + avatar.avatarContentType + ';base64,' + avatar.avatar" style="max-width: 100%" alt="avatar image" />
+            </a>
+            {{ avatar.avatarContentType }}, {{ byteSize(avatar.avatar) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.avatar.title">Title</span></dt>
+        <dd>
+          <span>{{ avatar.title }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.avatar.user">User</span></dt>
+        <dd>
+          <span *ngFor="let user of avatar.users; let last = last"> {{ user.login }}{{ last ? '' : ', ' }} </span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/avatar', avatar.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+{
+  "parrainageApp": {
+    "gift": {
+      "home": {
+        "title": "Gifts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Gift baru",
+        "createOrEditLabel": "Buat atau edit Gift",
+        "notFound": "No Gifts found"
+      },
+      "created": "Gift dengan id {{ param }} telah dibuat",
+      "updated": "Gift dengan id {{ param }} telah diperbaharui",
+      "deleted": "Gift dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Gift {{ id }}?"
+      },
+      "detail": {
+        "title": "Gift"
+      },
+      "id": "ID",
+      "brandName": "Brand Name",
+      "material": "Material",
+      "style": "Style",
+      "season": "Season",
+      "type": "Type",
+      "clothingLength": "Clothing Length",
+      "collar": "Collar",
+      "sleeveLength": "Sleeve Length",
+      "design": "Design",
+      "gender": "Gender",
+      "occasion": "Occasion",
+      "decoration": "Decoration",
+      "closureType": "Closure Type",
+      "sleeveType": "Sleeve Type",
+      "color": "Color",
+      "quality": "Quality",
+      "features": "Features",
+      "activeNoiseCancellation": "Active Noise Cancellation",
+      "volumeControl": "Volume Control",
+      "wirelessType": "Wireless Type",
+      "functions": "Functions",
+      "packageList": "Package List",
+      "bluetoothVersion": "Bluetooth Version",
+      "frequency": "Frequency",
+      "modelNumber": "Model Number",
+      "description": "Description",
+      "ram": "Ram",
+      "suitableFor": "Suitable For",
+      "screenStyle": "Screen Style",
+      "weight": "Weight",
+      "rom": "Rom",
+      "battery": "Battery",
+      "touchScreen": "Touch Screen",
+      "hooded": "Hooded",
+      "madeIn": "Made In",
+      "shippingFrom": "Shipping From",
+      "sizee": "Sizee",
+      "picture": "Picture"
+    }
+  }
+}

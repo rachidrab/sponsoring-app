@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Campaign",
+        "createOrEditLabel": "Creeare sau editare Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "A fost creată o nouă entitate Campaign cu identificatorul {{ param }}",
+      "updated": "Campaign cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Campaign cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

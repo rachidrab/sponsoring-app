@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Picture",
+        "createOrEditLabel": "Krijo ose përpuno një Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "Një Picture i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Picture u përpunua me identifikues {{ param }}",
+      "deleted": "Një Picture u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

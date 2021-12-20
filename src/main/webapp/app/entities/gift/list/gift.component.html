@@ -1,0 +1,222 @@
+<div>
+  <h2 id="page-heading" data-cy="GiftHeading">
+    <span jhiTranslate="parrainageApp.gift.home.title">Gifts</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info mr-2" (click)="loadPage()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="parrainageApp.gift.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-gift"
+        [routerLink]="['/gift/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="parrainageApp.gift.home.createLabel"> Create a new Gift </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="gifts?.length === 0">
+    <span jhiTranslate="parrainageApp.gift.home.notFound">No gifts found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="gifts && gifts.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="loadPage()">
+          <th scope="col" jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="brandName">
+            <span jhiTranslate="parrainageApp.gift.brandName">Brand Name</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="material">
+            <span jhiTranslate="parrainageApp.gift.material">Material</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="style"><span jhiTranslate="parrainageApp.gift.style">Style</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="season">
+            <span jhiTranslate="parrainageApp.gift.season">Season</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="type"><span jhiTranslate="parrainageApp.gift.type">Type</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="clothingLength">
+            <span jhiTranslate="parrainageApp.gift.clothingLength">Clothing Length</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="collar">
+            <span jhiTranslate="parrainageApp.gift.collar">Collar</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="sleeveLength">
+            <span jhiTranslate="parrainageApp.gift.sleeveLength">Sleeve Length</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="design">
+            <span jhiTranslate="parrainageApp.gift.design">Design</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="gender">
+            <span jhiTranslate="parrainageApp.gift.gender">Gender</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="occasion">
+            <span jhiTranslate="parrainageApp.gift.occasion">Occasion</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="decoration">
+            <span jhiTranslate="parrainageApp.gift.decoration">Decoration</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="closureType">
+            <span jhiTranslate="parrainageApp.gift.closureType">Closure Type</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="sleeveType">
+            <span jhiTranslate="parrainageApp.gift.sleeveType">Sleeve Type</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="color"><span jhiTranslate="parrainageApp.gift.color">Color</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="quality">
+            <span jhiTranslate="parrainageApp.gift.quality">Quality</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="features">
+            <span jhiTranslate="parrainageApp.gift.features">Features</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="activeNoiseCancellation">
+            <span jhiTranslate="parrainageApp.gift.activeNoiseCancellation">Active Noise Cancellation</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="volumeControl">
+            <span jhiTranslate="parrainageApp.gift.volumeControl">Volume Control</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="wirelessType">
+            <span jhiTranslate="parrainageApp.gift.wirelessType">Wireless Type</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="functions">
+            <span jhiTranslate="parrainageApp.gift.functions">Functions</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="packageList">
+            <span jhiTranslate="parrainageApp.gift.packageList">Package List</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="bluetoothVersion">
+            <span jhiTranslate="parrainageApp.gift.bluetoothVersion">Bluetooth Version</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="frequency">
+            <span jhiTranslate="parrainageApp.gift.frequency">Frequency</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="modelNumber">
+            <span jhiTranslate="parrainageApp.gift.modelNumber">Model Number</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="description">
+            <span jhiTranslate="parrainageApp.gift.description">Description</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="ram"><span jhiTranslate="parrainageApp.gift.ram">Ram</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="suitableFor">
+            <span jhiTranslate="parrainageApp.gift.suitableFor">Suitable For</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="screenStyle">
+            <span jhiTranslate="parrainageApp.gift.screenStyle">Screen Style</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="weight">
+            <span jhiTranslate="parrainageApp.gift.weight">Weight</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="rom"><span jhiTranslate="parrainageApp.gift.rom">Rom</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="battery">
+            <span jhiTranslate="parrainageApp.gift.battery">Battery</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="touchScreen">
+            <span jhiTranslate="parrainageApp.gift.touchScreen">Touch Screen</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="hooded">
+            <span jhiTranslate="parrainageApp.gift.hooded">Hooded</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="madeIn">
+            <span jhiTranslate="parrainageApp.gift.madeIn">Made In</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="shippingFrom">
+            <span jhiTranslate="parrainageApp.gift.shippingFrom">Shipping From</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="sizee"><span jhiTranslate="parrainageApp.gift.sizee">Sizee</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let gift of gifts; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/gift', gift.id, 'view']">{{ gift.id }}</a>
+          </td>
+          <td>{{ gift.brandName }}</td>
+          <td>{{ gift.material }}</td>
+          <td>{{ gift.style }}</td>
+          <td>{{ gift.season }}</td>
+          <td>{{ gift.type }}</td>
+          <td>{{ gift.clothingLength }}</td>
+          <td>{{ gift.collar }}</td>
+          <td>{{ gift.sleeveLength }}</td>
+          <td>{{ gift.design }}</td>
+          <td>{{ gift.gender }}</td>
+          <td>{{ gift.occasion }}</td>
+          <td>{{ gift.decoration }}</td>
+          <td>{{ gift.closureType }}</td>
+          <td>{{ gift.sleeveType }}</td>
+          <td>{{ gift.color }}</td>
+          <td>{{ gift.quality }}</td>
+          <td>{{ gift.features }}</td>
+          <td jhiTranslate="{{ 'parrainageApp.ActiveNoiseCancellation.' + gift.activeNoiseCancellation }}">
+            {{ gift.activeNoiseCancellation }}
+          </td>
+          <td jhiTranslate="{{ 'parrainageApp.VolumeControl.' + gift.volumeControl }}">{{ gift.volumeControl }}</td>
+          <td>{{ gift.wirelessType }}</td>
+          <td>{{ gift.functions }}</td>
+          <td>{{ gift.packageList }}</td>
+          <td>{{ gift.bluetoothVersion }}</td>
+          <td>{{ gift.frequency }}</td>
+          <td>{{ gift.modelNumber }}</td>
+          <td>{{ gift.description }}</td>
+          <td>{{ gift.ram }}</td>
+          <td>{{ gift.suitableFor }}</td>
+          <td>{{ gift.screenStyle }}</td>
+          <td>{{ gift.weight }}</td>
+          <td>{{ gift.rom }}</td>
+          <td>{{ gift.battery }}</td>
+          <td jhiTranslate="{{ 'parrainageApp.TouchScreen.' + gift.touchScreen }}">{{ gift.touchScreen }}</td>
+          <td jhiTranslate="{{ 'parrainageApp.Hooded.' + gift.hooded }}">{{ gift.hooded }}</td>
+          <td>{{ gift.madeIn }}</td>
+          <td>{{ gift.shippingFrom }}</td>
+          <td>{{ gift.sizee }}</td>
+          <td class="text-right">
+            <div class="btn-group">
+              <button type="submit" [routerLink]="['/gift', gift.id, 'view']" class="btn btn-info btn-sm" data-cy="entityDetailsButton">
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button type="submit" [routerLink]="['/gift', gift.id, 'edit']" class="btn btn-primary btn-sm" data-cy="entityEditButton">
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(gift)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="gifts && gifts.length > 0">
+    <div class="row justify-content-center">
+      <jhi-item-count [params]="{ page: page, totalItems: totalItems, itemsPerPage: itemsPerPage }"></jhi-item-count>
+    </div>
+
+    <div class="row justify-content-center">
+      <ngb-pagination
+        [collectionSize]="totalItems"
+        [(page)]="ngbPaginationPage"
+        [pageSize]="itemsPerPage"
+        [maxSize]="5"
+        [rotate]="true"
+        [boundaryLinks]="true"
+        (pageChange)="loadPage($event)"
+      ></ngb-pagination>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Avatar बनाएँ",
+        "createOrEditLabel": "Avatar बनाएँ या संपादित करें",
+        "notFound": "No Avatars found"
+      },
+      "created": "एक नया Avatar [identifier: {{ param }}] तैयार है",
+      "updated": "एक Avatar [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Avatar [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Avatar [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

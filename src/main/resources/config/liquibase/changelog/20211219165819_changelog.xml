@@ -1,0 +1,47 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd">
+    <changeSet author="HP (generated)" id="1639933118803-6">
+        <addColumn tableName="jhi_user">
+            <column name="birth_date" type="datetime(6)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-7">
+        <addColumn tableName="jhi_user">
+            <column name="code_parrainage" type="varchar(256)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-10">
+        <addColumn tableName="jhi_user">
+            <column name="image" type="longblob"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-11">
+        <addColumn tableName="jhi_user">
+            <column name="image_content_type" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-12">
+        <addColumn tableName="jhi_user">
+            <column name="parraine_par_id" type="bigint"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-13">
+        <addColumn tableName="jhi_user">
+            <column name="phone_number" type="varchar(256)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-14">
+        <addColumn tableName="jhi_user">
+            <column name="score_total" type="bigint"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="HP (generated)" id="1639933118803-15">
+        <addColumn tableName="jhi_user">
+            <column name="sexe" type="integer"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="HP (generated)" id="1639933118803-21">
+        <addForeignKeyConstraint baseColumnNames="parraine_par_id" baseTableName="jhi_user" constraintName="FK92qj1anbifil15fjuyw5c1dks" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="jhi_user" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

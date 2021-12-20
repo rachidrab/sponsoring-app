@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Address",
+        "createOrEditLabel": "Krijo ose përpuno një Address",
+        "notFound": "No Addresses found"
+      },
+      "created": "Një Address i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Address u përpunua me identifikues {{ param }}",
+      "deleted": "Një Address u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Address {{ id }}?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "fields": [
+    {
+      "fieldName": "brandName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "material",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "style",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "season",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clothingLength",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "collar",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sleeveLength",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "design",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "occasion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "decoration",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "closureType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sleeveType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "color",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quality",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "features",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activeNoiseCancellation",
+      "fieldType": "ActiveNoiseCancellation",
+      "fieldValues": "YES,NO"
+    },
+    {
+      "fieldName": "volumeControl",
+      "fieldType": "VolumeControl",
+      "fieldValues": "YES,NO"
+    },
+    {
+      "fieldName": "wirelessType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "functions",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "packageList",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bluetoothVersion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "frequency",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modelNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "ram",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "suitableFor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "screenStyle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "weight",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "rom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "battery",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "touchScreen",
+      "fieldType": "TouchScreen",
+      "fieldValues": "YES,NO"
+    },
+    {
+      "fieldName": "hooded",
+      "fieldType": "Hooded",
+      "fieldValues": "YES,NO"
+    },
+    {
+      "fieldName": "madeIn",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingFrom",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sizee",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipName": "picture",
+      "otherEntityName": "picture",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "gift"
+    }
+  ],
+  "service": "serviceImpl",
+  "dto": "no",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "pagination",
+  "name": "Gift",
+  "changelogDate": "20211218164838"
+}

@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Pridať Week",
+        "createOrEditLabel": "Pridať alebo upraviť Week",
+        "notFound": "No Weeks found"
+      },
+      "created": "Bol vytvorený potomok entity Week s identifikátorom {{ param }}",
+      "updated": "Potomok entity Week s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Week s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Week {{ id }}?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

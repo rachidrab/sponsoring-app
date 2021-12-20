@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Kreiraj novi Avatar",
+        "createOrEditLabel": "Kreirajte ili izmenite Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Kreiran je novi Avatar pod nazivom {{ param }}",
+      "updated": "Avatar pod nazivom {{ param }} je ažuriran",
+      "deleted": "Avatar pod nazivom {{ param }} je obrisan",
+      "delete": {
+        "question": "Da li ste sigurni da želite da obrišete Avatar pod nazivom {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

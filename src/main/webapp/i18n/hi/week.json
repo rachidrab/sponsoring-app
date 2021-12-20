@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Week बनाएँ",
+        "createOrEditLabel": "Week बनाएँ या संपादित करें",
+        "notFound": "No Weeks found"
+      },
+      "created": "एक नया Week [identifier: {{ param }}] तैयार है",
+      "updated": "एक Week [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Week [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Week [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Pridať Address",
+        "createOrEditLabel": "Pridať alebo upraviť Address",
+        "notFound": "No Addresses found"
+      },
+      "created": "Bol vytvorený potomok entity Address s identifikátorom {{ param }}",
+      "updated": "Potomok entity Address s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Address s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Address {{ id }}?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

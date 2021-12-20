@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Address",
+        "createOrEditLabel": "Criar ou editar Address",
+        "notFound": "Nenhum Addresses encontrado"
+      },
+      "created": "Um novo Address foi criado com o identificador {{ param }}",
+      "updated": "Address com identificador {{ param }} foi actualizado",
+      "deleted": "Address com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Address {{ id }}?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

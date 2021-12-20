@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+    <!--
+        Added the constraints for entity Campaign.
+    -->
+    <changeSet id="20211218161623-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="campaign_id"
+                                 baseTableName="rel_campaign__participant"
+                                 constraintName="fk_rel_campaign__participant__campaign_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="campaign"/>
+
+        <addForeignKeyConstraint baseColumnNames="participant_id"
+                                 baseTableName="rel_campaign__participant"
+                                 constraintName="fk_rel_campaign__participant__participant_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="gift_id"
+                                 baseTableName="campaign"
+                                 constraintName="fk_campaign__gift_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="gift"/>
+    </changeSet>
+</databaseChangeLog>

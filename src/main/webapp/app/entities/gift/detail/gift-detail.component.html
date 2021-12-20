@@ -1,0 +1,178 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="gift">
+      <h2 data-cy="giftDetailsHeading"><span jhiTranslate="parrainageApp.gift.detail.title">Gift</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ gift.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.brandName">Brand Name</span></dt>
+        <dd>
+          <span>{{ gift.brandName }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.material">Material</span></dt>
+        <dd>
+          <span>{{ gift.material }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.style">Style</span></dt>
+        <dd>
+          <span>{{ gift.style }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.season">Season</span></dt>
+        <dd>
+          <span>{{ gift.season }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.type">Type</span></dt>
+        <dd>
+          <span>{{ gift.type }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.clothingLength">Clothing Length</span></dt>
+        <dd>
+          <span>{{ gift.clothingLength }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.collar">Collar</span></dt>
+        <dd>
+          <span>{{ gift.collar }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.sleeveLength">Sleeve Length</span></dt>
+        <dd>
+          <span>{{ gift.sleeveLength }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.design">Design</span></dt>
+        <dd>
+          <span>{{ gift.design }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.gender">Gender</span></dt>
+        <dd>
+          <span>{{ gift.gender }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.occasion">Occasion</span></dt>
+        <dd>
+          <span>{{ gift.occasion }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.decoration">Decoration</span></dt>
+        <dd>
+          <span>{{ gift.decoration }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.closureType">Closure Type</span></dt>
+        <dd>
+          <span>{{ gift.closureType }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.sleeveType">Sleeve Type</span></dt>
+        <dd>
+          <span>{{ gift.sleeveType }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.color">Color</span></dt>
+        <dd>
+          <span>{{ gift.color }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.quality">Quality</span></dt>
+        <dd>
+          <span>{{ gift.quality }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.features">Features</span></dt>
+        <dd>
+          <span>{{ gift.features }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.activeNoiseCancellation">Active Noise Cancellation</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'parrainageApp.ActiveNoiseCancellation.' + gift.activeNoiseCancellation }}">{{
+            gift.activeNoiseCancellation
+          }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.volumeControl">Volume Control</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'parrainageApp.VolumeControl.' + gift.volumeControl }}">{{ gift.volumeControl }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.wirelessType">Wireless Type</span></dt>
+        <dd>
+          <span>{{ gift.wirelessType }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.functions">Functions</span></dt>
+        <dd>
+          <span>{{ gift.functions }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.packageList">Package List</span></dt>
+        <dd>
+          <span>{{ gift.packageList }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.bluetoothVersion">Bluetooth Version</span></dt>
+        <dd>
+          <span>{{ gift.bluetoothVersion }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.frequency">Frequency</span></dt>
+        <dd>
+          <span>{{ gift.frequency }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.modelNumber">Model Number</span></dt>
+        <dd>
+          <span>{{ gift.modelNumber }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.description">Description</span></dt>
+        <dd>
+          <span>{{ gift.description }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.ram">Ram</span></dt>
+        <dd>
+          <span>{{ gift.ram }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.suitableFor">Suitable For</span></dt>
+        <dd>
+          <span>{{ gift.suitableFor }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.screenStyle">Screen Style</span></dt>
+        <dd>
+          <span>{{ gift.screenStyle }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.weight">Weight</span></dt>
+        <dd>
+          <span>{{ gift.weight }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.rom">Rom</span></dt>
+        <dd>
+          <span>{{ gift.rom }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.battery">Battery</span></dt>
+        <dd>
+          <span>{{ gift.battery }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.touchScreen">Touch Screen</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'parrainageApp.TouchScreen.' + gift.touchScreen }}">{{ gift.touchScreen }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.hooded">Hooded</span></dt>
+        <dd>
+          <span jhiTranslate="{{ 'parrainageApp.Hooded.' + gift.hooded }}">{{ gift.hooded }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.madeIn">Made In</span></dt>
+        <dd>
+          <span>{{ gift.madeIn }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.shippingFrom">Shipping From</span></dt>
+        <dd>
+          <span>{{ gift.shippingFrom }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.gift.sizee">Sizee</span></dt>
+        <dd>
+          <span>{{ gift.sizee }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/gift', gift.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

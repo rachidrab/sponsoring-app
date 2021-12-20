@@ -1,0 +1,11 @@
+id;is_week;is_month
+1;false;true
+2;false;true
+3;false;false
+4;true;true
+5;false;true
+6;true;false
+7;true;true
+8;true;true
+9;false;false
+10;false;true

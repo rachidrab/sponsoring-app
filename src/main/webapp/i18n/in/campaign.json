@@ -1,0 +1,27 @@
+{
+  "parrainageApp": {
+    "campaign": {
+      "home": {
+        "title": "Campaigns",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Campaign baru",
+        "createOrEditLabel": "Buat atau edit Campaign",
+        "notFound": "No Campaigns found"
+      },
+      "created": "Campaign dengan id {{ param }} telah dibuat",
+      "updated": "Campaign dengan id {{ param }} telah diperbaharui",
+      "deleted": "Campaign dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Campaign {{ id }}?"
+      },
+      "detail": {
+        "title": "Campaign"
+      },
+      "id": "ID",
+      "isWeek": "Is Week",
+      "isMonth": "Is Month",
+      "participant": "Participant",
+      "gift": "Gift"
+    }
+  }
+}

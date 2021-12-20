@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Picture",
+        "createOrEditLabel": "Skapa eller ändra en Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "En ny Picture är skapad med id {{ param }}",
+      "updated": "En Picture är uppdaterad med id  {{ param }}",
+      "deleted": "En Picture är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

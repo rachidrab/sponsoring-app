@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Week",
+        "createOrEditLabel": "Creeare sau editare Week",
+        "notFound": "No Weeks found"
+      },
+      "created": "A fost creată o nouă entitate Week cu identificatorul {{ param }}",
+      "updated": "Week cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Week cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Week {{ id }}?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

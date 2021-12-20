@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="picture">
+      <h2 data-cy="pictureDetailsHeading"><span jhiTranslate="parrainageApp.picture.detail.title">Picture</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ picture.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.picture.image">Image</span></dt>
+        <dd>
+          <div *ngIf="picture.image">
+            <a (click)="openFile(picture.image, picture.imageContentType)">
+              <img [src]="'data:' + picture.imageContentType + ';base64,' + picture.image" style="max-width: 100%" alt="picture image" />
+            </a>
+            {{ picture.imageContentType }}, {{ byteSize(picture.image) }}
+          </div>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.picture.title">Title</span></dt>
+        <dd>
+          <span>{{ picture.title }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.picture.gift">Gift</span></dt>
+        <dd>
+          <div *ngIf="picture.gift">
+            <a [routerLink]="['/gift', picture.gift?.id, 'view']">{{ picture.gift?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/picture', picture.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

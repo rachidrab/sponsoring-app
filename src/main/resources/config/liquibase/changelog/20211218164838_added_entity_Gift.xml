@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity Gift.
+    -->
+    <changeSet id="20211218164838-1" author="jhipster">
+        <createTable tableName="gift">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="brand_name" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="material" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="style" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="season" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="clothing_length" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="collar" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sleeve_length" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="design" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="gender" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="occasion" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="decoration" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="closure_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sleeve_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="color" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="quality" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="features" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="active_noise_cancellation" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="volume_control" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="wireless_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="functions" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="package_list" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="bluetooth_version" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="frequency" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="model_number" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="description" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ram" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="suitable_for" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="screen_style" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="weight" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="rom" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="battery" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="touch_screen" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="hooded" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="made_in" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="shipping_from" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sizee" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20211218164838-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/gift.csv"
+                  separator=";"
+                  tableName="gift"
+                  usePreparedStatements="true">
+            <column name="id" type="numeric"/>
+            <column name="brand_name" type="string"/>
+            <column name="material" type="string"/>
+            <column name="style" type="string"/>
+            <column name="season" type="string"/>
+            <column name="type" type="string"/>
+            <column name="clothing_length" type="string"/>
+            <column name="collar" type="string"/>
+            <column name="sleeve_length" type="string"/>
+            <column name="design" type="string"/>
+            <column name="gender" type="string"/>
+            <column name="occasion" type="string"/>
+            <column name="decoration" type="string"/>
+            <column name="closure_type" type="string"/>
+            <column name="sleeve_type" type="string"/>
+            <column name="color" type="string"/>
+            <column name="quality" type="string"/>
+            <column name="features" type="string"/>
+            <column name="active_noise_cancellation" type="string"/>
+            <column name="volume_control" type="string"/>
+            <column name="wireless_type" type="string"/>
+            <column name="functions" type="string"/>
+            <column name="package_list" type="string"/>
+            <column name="bluetooth_version" type="string"/>
+            <column name="frequency" type="string"/>
+            <column name="model_number" type="string"/>
+            <column name="description" type="string"/>
+            <column name="ram" type="string"/>
+            <column name="suitable_for" type="string"/>
+            <column name="screen_style" type="string"/>
+            <column name="weight" type="string"/>
+            <column name="rom" type="string"/>
+            <column name="battery" type="string"/>
+            <column name="touch_screen" type="string"/>
+            <column name="hooded" type="string"/>
+            <column name="made_in" type="string"/>
+            <column name="shipping_from" type="string"/>
+            <column name="sizee" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

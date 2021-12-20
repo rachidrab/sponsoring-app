@@ -1,0 +1,71 @@
+<div>
+  <div class='row justify-content-center'>
+    <div class='col-lg-6 col-md-8 col-sm-10'>
+      <nb-card accent='info' style='width: 100%'>
+        <nb-card-header><h3 style='text-align: center' jhiTranslate='login.title' data-cy='loginTitle'>Se connecter à
+          Welcomer</h3></nb-card-header>
+        <nb-card-body>
+          <div class='alert alert-danger' *ngIf='authenticationError'
+               jhiTranslate='login.messages.error.authentication'
+               data-cy='loginError'>
+            <strong>Failed to sign in!</strong> Please check your credentials and try again.
+          </div>
+          <form class='form' role='form' (ngSubmit)='login()' [formGroup]='loginForm'>
+            <div class='modal-body'>
+              <label class='label' for='username' jhiTranslate='global.form.username.label'>Nom d'utilisateur</label>
+              <nb-form-field>
+                <nb-icon nbPrefix icon='person' pack='eva'></nb-icon>
+                <input
+                  nbInput
+                  fullWidth
+                  type='text'
+                  class='form-control'
+                  name='username'
+                  id='username'
+                  placeholder="Nom d'utilisateur"
+                  formControlName='username'
+                  #username
+                  data-cy='username'
+                  shape='round'
+                />
+              </nb-form-field>
+            </div>
+            <div class='modal-body'>
+              <label class='label' for='password' jhiTranslate='login.form.password'>Mot de passe</label>
+              <nb-form-field>
+                <nb-icon nbPrefix icon='lock' pack='eva'></nb-icon>
+                <input
+                  nbInput
+                  fullWidth
+                  type='password'
+                  class='form-control'
+                  name='password'
+                  id='password'
+                  placeholder='Mot de passe'
+                  formControlName='password'
+                  data-cy='password'
+                  shape='round'
+                />
+              </nb-form-field>
+            </div>
+            <div class='modal-body'>
+              <button
+                nbButton
+                fullWidth
+                status='primary'
+                size='medium'
+                shape='round'
+                type='submit'
+                class='btn btn-primary'
+                jhiTranslate='login.form.button'
+                data-cy='submit'
+              >
+                Se connecter
+              </button>
+            </div>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>

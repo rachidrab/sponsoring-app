@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Pridať Avatar",
+        "createOrEditLabel": "Pridať alebo upraviť Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Bol vytvorený potomok entity Avatar s identifikátorom {{ param }}",
+      "updated": "Potomok entity Avatar s identifikátorom {{ param }} bol upravený.",
+      "deleted": "Potomok entity Avatar s identifikátorom {{ param }} bol vymazaný.",
+      "delete": {
+        "question": "Ste si istý, že chcete vymazať Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

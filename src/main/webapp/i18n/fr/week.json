@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Week",
+        "createOrEditLabel": "Créer ou éditer un Week",
+        "notFound": "Aucun Week trouvé"
+      },
+      "created": "Un nouveau Week a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Week avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Week avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Week {{ id }} ?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}

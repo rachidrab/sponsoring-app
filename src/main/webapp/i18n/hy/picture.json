@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ստեղծել նոր Picture",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "Նոր Picture ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Picture թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Picture հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

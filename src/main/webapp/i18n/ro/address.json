@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Creeare o nouă entitate Address",
+        "createOrEditLabel": "Creeare sau editare Address",
+        "notFound": "No Addresses found"
+      },
+      "created": "A fost creată o nouă entitate Address cu identificatorul {{ param }}",
+      "updated": "Address cu identificatorul {{ param }} a fost actualizată",
+      "deleted": "Address cu identificatorul {{ param }} a fost ștearsă",
+      "delete": {
+        "question": "Sunteți sigur că doriți să ștergeți Address {{ id }}?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

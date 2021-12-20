@@ -1,0 +1,271 @@
+<div class="container">
+  <div class=row>
+    <div class="col-md-6">
+      <div class="card card-blog">
+        <div class="card-image">
+          <a href="#"> <img class="img" src="../../../content/images/sponsor2.png"> </a>
+          <div class="ripple-cont"></div>
+        </div>
+        <div class="table text-center">
+          <h6 class="text-heading" style="text-decoration: underline;">
+            Vous étes parrainé par
+          </h6>
+          <h3 class="text-primary">
+            {{user?.firstName}} {{user?.lastName}}
+          </h3>
+          <h6 class="text-heading" style="text-decoration: underline;">
+            Code de parrainage
+          </h6>
+          <h4 class="text-primary">{{code}}</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <jhi-alert-error></jhi-alert-error>
+      <nb-card size="medium">
+        <nb-card-body>
+          <form name='editForm' role='form' novalidate [formGroup]='editForm'>
+            <nb-stepper orientation="vertical" #stepper>
+              <nb-step>
+                <form [formGroup]="firstForm" (ngSubmit)="onFirstSubmit()" class="step-container"></form>
+                <!-- <h5 class="text-heading text-center">Créer un compte</h5> -->
+                <div *ngIf='user'>
+                  <div class='row'>
+                    <div class='col-sm-6'>
+                      <div class='form-group'>
+                        <label for='field_firstName' class='label'>firstName</label>
+                        <input type='text' nbinput='' fullwidth='' name='firstName' id='field_firstName'
+                          data-cy='firstName' formControlName='firstName'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('firstName')!.invalid && (editForm.get('firstName')!.dirty || editForm.get('firstName')!.touched)">
+                          <small class='form-text text-danger' *ngIf="editForm.get('firstName')?.errors?.maxlength">
+                            This field cannot be longer than 50 characters.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class='col-sm-6'>
+                      <div class='form-group'>
+                        <label for='field_lastName' class='label'>Lastname</label>
+                        <input type='text' nbinput='' fullwidth='' name='lastName' id='field_lastName'
+                          data-cy='lastName' formControlName='lastName'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('lastName')!.invalid && (editForm.get('lastName')!.dirty || editForm.get('lastName')!.touched)">
+                          <small class='form-text text-danger' *ngIf="editForm.get('lastName')?.errors?.maxlength">
+                            This field cannot be longer than 50 characters.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group'>
+                        <label for='field_login' class='label'>Username</label>
+                        <input type='text' nbinput='' fullwidth='' name='login' id='field_login' data-cy='login'
+                          formControlName='login'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('login')!.invalid && (editForm.get('login')!.dirty || editForm.get('login')!.touched)">
+                          <small class='form-text text-danger' *ngIf="editForm.get('login')?.errors?.required">
+                            Ce champ est obligatoire.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('login')?.errors?.maxlength">
+                            This field cannot be longer than 50 characters.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('login')?.errors?.pattern">
+                            This field can only contain letters, digits and e-mail addresses.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group'>
+                        <label for='field_email' class='label'>Email</label>
+                        <input type='email' nbinput='' fullwidth='' name='email' id='field_email' data-cy='email'
+                          formControlName='email'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('email')!.invalid && (editForm.get('email')!.dirty || editForm.get('email')!.touched)">
+                          <small class='form-text text-danger' *ngIf="editForm.get('email')?.errors?.required">
+                            This field is required.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('email')?.errors?.maxlength">
+                            This field cannot be longer than 100 characters.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('email')?.errors?.minlength">
+                            This field is required to be at least 5 characters.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('email')?.errors?.email">
+                            Your email is invalid.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group'>
+                        <label for='field_code' class='label'>Code de parrainage</label>
+                        <input type='text' nbinput='' fullwidth='' id='field_code' readonly name='code' id='field_code'
+                          data-cy='code' formControlName='code'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <button nbButton fullWidth nbStepperNext>Etape suivante</button>
+                    </div>
+                  </div>
+                </div>
+              </nb-step>
+              <nb-step>
+                <form [formGroup]="secondForm" (ngSubmit)="onSecondSubmit()" class="step-container">
+                  <div class='row'>
+                    <div class='col-sm-6'>
+                      <div class='form-group'>
+                        <label for='field_firstName' class='label'>Date de naissance</label>
+                        <input
+                type='date'
+                nbinput=''
+                fullwidth=''
+                name='birthDate'
+                id='field_birthDate'
+                data-cy='birthDate'
+                formControlName='birthDate'
+                placeholder='YYYY-MM-DD'
+                ngbDatepicker
+                #dateDp='ngbDatepicker'
+                class='input-full-width size-medium status-basic shape-rectangle nb-transition'
+              />
+                      </div>
+                    </div>
+
+                    <div class='col-sm-6'>
+                      <div class='form-group'>
+                        <label for='field_lastName' class='label'>Sexe</label>
+                        <nb-select  name='sexe' formControlName='sexe' id='field_sexe' data-cy='sexe'
+                          placeholder='Sexe'
+                          class='input-full-width  status-basic shape-rectangle nb-transition'>
+                          <nb-option value='Homme'>Homme</nb-option>
+                          <nb-option value='Femme'>Femme</nb-option>
+                        </nb-select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group'>
+                        <label for='field_phoneNumber' class='label'>Numéro de téléphone</label>
+                        <input type='text' nbinput='' fullwidth='' name='phoneNumber' id='field_phoneNumber' data-cy='phoneNumber'
+                          formControlName='phoneNumber'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('phoneNumber')!.invalid && (editForm.get('phoneNumber')!.dirty || editForm.get('phoneNumber')!.touched)">
+                          <small class='form-text text-danger' *ngIf="editForm.get('phoneNumber')?.errors?.required">
+                            Ce champ est obligatoire.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('phoneNumber')?.errors?.maxlength">
+                            This field cannot be longer than 50 characters.
+                          </small>
+
+                          <small class='form-text text-danger' *ngIf="editForm.get('phoneNumber')?.errors?.pattern">
+                            This field can only contain letters, digits and e-mail addresses.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group'>
+                        <label for='field_password' class='label'>Mot de passe</label>
+                        <input type='password' nbinput='' fullwidth='' name='password' id='field_password' data-cy='password'
+                          formControlName='password'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('password')!.invalid && (editForm.get('password')!.dirty || editForm.get('password')!.touched)">
+                          <small class="form-text text-danger" *ngIf="editForm.get('password')?.errors?.required"> Your
+                            password is required. </small>
+
+                          <small class="form-text text-danger" *ngIf="editForm.get('password')?.errors?.minlength">
+                            Your password is required to be at least 4 characters.
+                          </small>
+
+                          <small class="form-text text-danger" *ngIf="editForm.get('password')?.errors?.maxlength">
+                            Your password cannot be longer than 50 characters.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-12'>
+                      <div class='form-group'>
+                        <label for='field_login' class='label'>Confirmation du mot de passe</label>
+                        <input type='password' nbinput='' fullwidth='' name='login' id='field_login' data-cy='login'
+                          formControlName='login'
+                          class='input-full-width size-medium status-basic shape-rectangle nb-transition' />
+                        <div
+                          *ngIf="editForm.get('confirmPassword')!.invalid && (editForm.get('confirmPassword')!.dirty || editForm.get('confirmPassword')!.touched)">
+                          <small class="form-text text-danger"
+                            *ngIf="editForm.get('confirmPassword')?.errors?.required"> Your password is required.
+                          </small>
+
+                          <small class="form-text text-danger"
+                            *ngIf="editForm.get('confirmPassword')?.errors?.minlength">
+                            Your password is required to be at least 4 characters.
+                          </small>
+
+                          <small class="form-text text-danger"
+                            *ngIf="editForm.get('confirmPassword')?.errors?.maxlength">
+                            Your password cannot be longer than 50 characters.
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-sm-6'>
+                      <button nbButton fullWidth nbStepperPrevious>Etape précédente</button>
+                    </div>
+                    <div class='col-sm-6'>
+                      <button nbButton fullWidth nbStepperNext>Créer mon compte</button>
+                    </div>
+                  </div>
+                </form>
+              </nb-step>
+              <nb-step [stepControl]="thirdForm" [hidden]="true" label="Third step">
+                <div class="step-container">
+                  <div class="card border-0 cardfinal">
+                    <div class="card-image">
+                      <img class="img" src="../../../content/images/2808352.jpg">
+                    </div>
+                    <div class="table text-center">
+                      <h3 class="text-primary">
+                        Félicitations!
+                      </h3>
+                      <p>Un mail a été envoyé à l'adresse : <b>{{editForm.controls['email'].value}}</b> <br /> Veuillez valider votre adresse mail avant de vous authentifier</p>
+                    </div>
+                  </div>
+                </div>
+              </nb-step>
+            </nb-stepper>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>

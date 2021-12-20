@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Створити новий Avatar",
+        "createOrEditLabel": "Створити чи редагувати Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Новий Avatar створений з ідентифікатором {{ param }}",
+      "updated": "Avatar оновлений з ідентифікатором {{ param }}",
+      "deleted": "Avatar видалений з ідентифікатором {{ param }}",
+      "delete": {
+        "question": "Ви впевнені, що хочете видалити Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Buat Avatar baru",
+        "createOrEditLabel": "Buat atau edit Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "Avatar dengan id {{ param }} telah dibuat",
+      "updated": "Avatar dengan id {{ param }} telah diperbaharui",
+      "deleted": "Avatar dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,355 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-gift-heading" data-cy="GiftCreateUpdateHeading" jhiTranslate="parrainageApp.gift.home.createOrEditLabel">
+        Create or edit a Gift
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="form-group" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-control-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.brandName" for="field_brandName">Brand Name</label>
+          <input type="text" class="form-control" name="brandName" id="field_brandName" data-cy="brandName" formControlName="brandName" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.material" for="field_material">Material</label>
+          <input type="text" class="form-control" name="material" id="field_material" data-cy="material" formControlName="material" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.style" for="field_style">Style</label>
+          <input type="text" class="form-control" name="style" id="field_style" data-cy="style" formControlName="style" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.season" for="field_season">Season</label>
+          <input type="text" class="form-control" name="season" id="field_season" data-cy="season" formControlName="season" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.type" for="field_type">Type</label>
+          <input type="text" class="form-control" name="type" id="field_type" data-cy="type" formControlName="type" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.clothingLength" for="field_clothingLength"
+            >Clothing Length</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="clothingLength"
+            id="field_clothingLength"
+            data-cy="clothingLength"
+            formControlName="clothingLength"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.collar" for="field_collar">Collar</label>
+          <input type="text" class="form-control" name="collar" id="field_collar" data-cy="collar" formControlName="collar" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.sleeveLength" for="field_sleeveLength">Sleeve Length</label>
+          <input
+            type="text"
+            class="form-control"
+            name="sleeveLength"
+            id="field_sleeveLength"
+            data-cy="sleeveLength"
+            formControlName="sleeveLength"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.design" for="field_design">Design</label>
+          <input type="text" class="form-control" name="design" id="field_design" data-cy="design" formControlName="design" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.gender" for="field_gender">Gender</label>
+          <input type="text" class="form-control" name="gender" id="field_gender" data-cy="gender" formControlName="gender" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.occasion" for="field_occasion">Occasion</label>
+          <input type="text" class="form-control" name="occasion" id="field_occasion" data-cy="occasion" formControlName="occasion" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.decoration" for="field_decoration">Decoration</label>
+          <input
+            type="text"
+            class="form-control"
+            name="decoration"
+            id="field_decoration"
+            data-cy="decoration"
+            formControlName="decoration"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.closureType" for="field_closureType">Closure Type</label>
+          <input
+            type="text"
+            class="form-control"
+            name="closureType"
+            id="field_closureType"
+            data-cy="closureType"
+            formControlName="closureType"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.sleeveType" for="field_sleeveType">Sleeve Type</label>
+          <input
+            type="text"
+            class="form-control"
+            name="sleeveType"
+            id="field_sleeveType"
+            data-cy="sleeveType"
+            formControlName="sleeveType"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.color" for="field_color">Color</label>
+          <input type="text" class="form-control" name="color" id="field_color" data-cy="color" formControlName="color" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.quality" for="field_quality">Quality</label>
+          <input type="text" class="form-control" name="quality" id="field_quality" data-cy="quality" formControlName="quality" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.features" for="field_features">Features</label>
+          <input type="text" class="form-control" name="features" id="field_features" data-cy="features" formControlName="features" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.activeNoiseCancellation" for="field_activeNoiseCancellation"
+            >Active Noise Cancellation</label
+          >
+          <select
+            class="form-control"
+            name="activeNoiseCancellation"
+            formControlName="activeNoiseCancellation"
+            id="field_activeNoiseCancellation"
+            data-cy="activeNoiseCancellation"
+          >
+            <option [ngValue]="null">{{ 'parrainageApp.ActiveNoiseCancellation.null' | translate }}</option>
+            <option *ngFor="let activeNoiseCancellation of activeNoiseCancellationValues" [value]="activeNoiseCancellation">
+              {{ 'parrainageApp.ActiveNoiseCancellation.' + activeNoiseCancellation | translate }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.volumeControl" for="field_volumeControl">Volume Control</label>
+          <select
+            class="form-control"
+            name="volumeControl"
+            formControlName="volumeControl"
+            id="field_volumeControl"
+            data-cy="volumeControl"
+          >
+            <option [ngValue]="null">{{ 'parrainageApp.VolumeControl.null' | translate }}</option>
+            <option *ngFor="let volumeControl of volumeControlValues" [value]="volumeControl">
+              {{ 'parrainageApp.VolumeControl.' + volumeControl | translate }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.wirelessType" for="field_wirelessType">Wireless Type</label>
+          <input
+            type="text"
+            class="form-control"
+            name="wirelessType"
+            id="field_wirelessType"
+            data-cy="wirelessType"
+            formControlName="wirelessType"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.functions" for="field_functions">Functions</label>
+          <input type="text" class="form-control" name="functions" id="field_functions" data-cy="functions" formControlName="functions" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.packageList" for="field_packageList">Package List</label>
+          <input
+            type="text"
+            class="form-control"
+            name="packageList"
+            id="field_packageList"
+            data-cy="packageList"
+            formControlName="packageList"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.bluetoothVersion" for="field_bluetoothVersion"
+            >Bluetooth Version</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="bluetoothVersion"
+            id="field_bluetoothVersion"
+            data-cy="bluetoothVersion"
+            formControlName="bluetoothVersion"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.frequency" for="field_frequency">Frequency</label>
+          <input type="text" class="form-control" name="frequency" id="field_frequency" data-cy="frequency" formControlName="frequency" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.modelNumber" for="field_modelNumber">Model Number</label>
+          <input
+            type="text"
+            class="form-control"
+            name="modelNumber"
+            id="field_modelNumber"
+            data-cy="modelNumber"
+            formControlName="modelNumber"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.description" for="field_description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            name="description"
+            id="field_description"
+            data-cy="description"
+            formControlName="description"
+          />
+          <div *ngIf="editForm.get('description')!.invalid && (editForm.get('description')!.dirty || editForm.get('description')!.touched)">
+            <small
+              class="form-text text-danger"
+              *ngIf="editForm.get('description')?.errors?.required"
+              jhiTranslate="entity.validation.required"
+            >
+              This field is required.
+            </small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.ram" for="field_ram">Ram</label>
+          <input type="text" class="form-control" name="ram" id="field_ram" data-cy="ram" formControlName="ram" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.suitableFor" for="field_suitableFor">Suitable For</label>
+          <input
+            type="text"
+            class="form-control"
+            name="suitableFor"
+            id="field_suitableFor"
+            data-cy="suitableFor"
+            formControlName="suitableFor"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.screenStyle" for="field_screenStyle">Screen Style</label>
+          <input
+            type="text"
+            class="form-control"
+            name="screenStyle"
+            id="field_screenStyle"
+            data-cy="screenStyle"
+            formControlName="screenStyle"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.weight" for="field_weight">Weight</label>
+          <input type="text" class="form-control" name="weight" id="field_weight" data-cy="weight" formControlName="weight" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.rom" for="field_rom">Rom</label>
+          <input type="text" class="form-control" name="rom" id="field_rom" data-cy="rom" formControlName="rom" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.battery" for="field_battery">Battery</label>
+          <input type="text" class="form-control" name="battery" id="field_battery" data-cy="battery" formControlName="battery" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.touchScreen" for="field_touchScreen">Touch Screen</label>
+          <select class="form-control" name="touchScreen" formControlName="touchScreen" id="field_touchScreen" data-cy="touchScreen">
+            <option [ngValue]="null">{{ 'parrainageApp.TouchScreen.null' | translate }}</option>
+            <option *ngFor="let touchScreen of touchScreenValues" [value]="touchScreen">
+              {{ 'parrainageApp.TouchScreen.' + touchScreen | translate }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.hooded" for="field_hooded">Hooded</label>
+          <select class="form-control" name="hooded" formControlName="hooded" id="field_hooded" data-cy="hooded">
+            <option [ngValue]="null">{{ 'parrainageApp.Hooded.null' | translate }}</option>
+            <option *ngFor="let hooded of hoodedValues" [value]="hooded">{{ 'parrainageApp.Hooded.' + hooded | translate }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.madeIn" for="field_madeIn">Made In</label>
+          <input type="text" class="form-control" name="madeIn" id="field_madeIn" data-cy="madeIn" formControlName="madeIn" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.shippingFrom" for="field_shippingFrom">Shipping From</label>
+          <input
+            type="text"
+            class="form-control"
+            name="shippingFrom"
+            id="field_shippingFrom"
+            data-cy="shippingFrom"
+            formControlName="shippingFrom"
+          />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.gift.sizee" for="field_sizee">Sizee</label>
+          <input type="text" class="form-control" name="sizee" id="field_sizee" data-cy="sizee" formControlName="sizee" />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

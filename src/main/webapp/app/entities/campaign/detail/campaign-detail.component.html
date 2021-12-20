@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="campaign">
+      <h2 data-cy="campaignDetailsHeading"><span jhiTranslate="parrainageApp.campaign.detail.title">Campaign</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ campaign.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.campaign.isWeek">Is Week</span></dt>
+        <dd>
+          <span>{{ campaign.isWeek }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.campaign.isMonth">Is Month</span></dt>
+        <dd>
+          <span>{{ campaign.isMonth }}</span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.campaign.participant">Participant</span></dt>
+        <dd>
+          <span *ngFor="let participant of campaign.participants; let last = last"> {{ participant.login }}{{ last ? '' : ', ' }} </span>
+        </dd>
+        <dt><span jhiTranslate="parrainageApp.campaign.gift">Gift</span></dt>
+        <dd>
+          <div *ngIf="campaign.gift">
+            <a [routerLink]="['/gift', campaign.gift?.id, 'view']">{{ campaign.gift?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/campaign', campaign.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

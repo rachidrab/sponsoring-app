@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "avatar": {
+      "home": {
+        "title": "Avatars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Skapa en ny Avatar",
+        "createOrEditLabel": "Skapa eller ändra en Avatar",
+        "notFound": "No Avatars found"
+      },
+      "created": "En ny Avatar är skapad med id {{ param }}",
+      "updated": "En Avatar är uppdaterad med id  {{ param }}",
+      "deleted": "En Avatar är borttagen med id  {{ param }}",
+      "delete": {
+        "question": "Är du säker på att du vill ta bort Avatar {{ id }}?"
+      },
+      "detail": {
+        "title": "Avatar"
+      },
+      "id": "ID",
+      "avatar": "Avatar",
+      "title": "Title",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Address बनाएँ",
+        "createOrEditLabel": "Address बनाएँ या संपादित करें",
+        "notFound": "No Addresses found"
+      },
+      "created": "एक नया Address [identifier: {{ param }}] तैयार है",
+      "updated": "एक Address [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Address [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Address [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

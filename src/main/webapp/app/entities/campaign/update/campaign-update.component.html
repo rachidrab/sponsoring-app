@@ -1,0 +1,76 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-campaign-heading" data-cy="CampaignCreateUpdateHeading" jhiTranslate="parrainageApp.campaign.home.createOrEditLabel">
+        Create or edit a Campaign
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="form-group" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-control-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.campaign.isWeek" for="field_isWeek">Is Week</label>
+          <input type="checkbox" class="form-check" name="isWeek" id="field_isWeek" data-cy="isWeek" formControlName="isWeek" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.campaign.isMonth" for="field_isMonth">Is Month</label>
+          <input type="checkbox" class="form-check" name="isMonth" id="field_isMonth" data-cy="isMonth" formControlName="isMonth" />
+        </div>
+
+        <div class="form-group">
+          <label jhiTranslate="parrainageApp.campaign.participant" for="field_participants">Participant</label>
+          <select
+            class="form-control"
+            id="field_participants"
+            data-cy="participant"
+            multiple
+            name="participants"
+            formControlName="participants"
+          >
+            <option
+              [ngValue]="getSelectedUser(userOption, editForm.get('participants')!.value)"
+              *ngFor="let userOption of usersSharedCollection; trackBy: trackUserById"
+            >
+              {{ userOption.login }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-control-label" jhiTranslate="parrainageApp.campaign.gift" for="field_gift">Gift</label>
+          <select class="form-control" id="field_gift" data-cy="gift" name="gift" formControlName="gift">
+            <option [ngValue]="null"></option>
+            <option
+              [ngValue]="giftOption.id === editForm.get('gift')!.value?.id ? editForm.get('gift')!.value : giftOption"
+              *ngFor="let giftOption of giftsCollection; trackBy: trackGiftById"
+            >
+              {{ giftOption.id }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

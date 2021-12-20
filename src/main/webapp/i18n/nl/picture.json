@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Picture",
+        "createOrEditLabel": "Maak of wijzig een Picture",
+        "notFound": "No Pictures found"
+      },
+      "created": "A new Picture is created with identifier {{ param }}",
+      "updated": "A Picture is updated with identifier {{ param }}",
+      "deleted": "A Picture is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Picture {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

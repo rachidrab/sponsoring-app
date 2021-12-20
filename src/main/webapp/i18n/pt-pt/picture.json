@@ -1,0 +1,26 @@
+{
+  "parrainageApp": {
+    "picture": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Criar novo(a) Picture",
+        "createOrEditLabel": "Criar ou editar Picture",
+        "notFound": "Nenhum Pictures encontrado"
+      },
+      "created": "Um novo Picture foi criado com o identificador {{ param }}",
+      "updated": "Picture com identificador {{ param }} foi actualizado",
+      "deleted": "Picture com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Picture {{ id }}?"
+      },
+      "detail": {
+        "title": "Picture"
+      },
+      "id": "ID",
+      "image": "Image",
+      "title": "Title",
+      "gift": "Gift"
+    }
+  }
+}

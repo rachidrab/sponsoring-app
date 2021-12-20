@@ -1,0 +1,30 @@
+{
+  "parrainageApp": {
+    "address": {
+      "home": {
+        "title": "Addresses",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ստեղծել նոր Address",
+        "createOrEditLabel": "Ստեղծել կամ փոփոխել Address",
+        "notFound": "No Addresses found"
+      },
+      "created": "Նոր Address ստեղծված է {{ param }} նունացուցիչով",
+      "updated": "Address թարմացվաց է {{ param }} նունացուցիչով",
+      "deleted": "Address հեռացված է {{ param }}  նունացուցիչով",
+      "delete": {
+        "question": "Դուք վստահ ե՞ք, որ ցանկանում եք հեռացնել Address {{ id }}?"
+      },
+      "detail": {
+        "title": "Address"
+      },
+      "id": "ID",
+      "streetLine1": "Street Line 1",
+      "streetLine2": "Street Line 2",
+      "city": "City",
+      "stateOrProvince": "State Or Province",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "user": "User"
+    }
+  }
+}

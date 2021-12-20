@@ -1,0 +1,25 @@
+{
+  "parrainageApp": {
+    "week": {
+      "home": {
+        "title": "Weeks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Krijo një të ri Week",
+        "createOrEditLabel": "Krijo ose përpuno një Week",
+        "notFound": "No Weeks found"
+      },
+      "created": "Një Week i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Week u përpunua me identifikues {{ param }}",
+      "deleted": "Një Week u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Week {{ id }}?"
+      },
+      "detail": {
+        "title": "Week"
+      },
+      "id": "ID",
+      "start": "Start",
+      "end": "End"
+    }
+  }
+}
